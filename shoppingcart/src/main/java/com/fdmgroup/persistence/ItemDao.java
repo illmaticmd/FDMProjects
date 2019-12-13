@@ -9,7 +9,7 @@ public interface ItemDao {
 	List<Item> listItems();
 	void addItem (Item product);
 	Item getItem (String name);
-	void removeItem(String name);
+	void removeItem(int id);
 	void updateItem (Item product);
 
 }

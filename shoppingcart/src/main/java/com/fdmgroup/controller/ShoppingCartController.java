@@ -11,6 +11,16 @@ public class ShoppingCartController {
 	@Autowired
 	private ItemDao dao;
 
+	@GetMapping("/")
+	public String landingPage() {
+		return "index";
+	}
+	
+	@GetMapping("/index")
+	public String homePage() {
+		return "index";
+	}
+	
 	@GetMapping("/cart")
 	public String cartPage() {
 		return "cart";

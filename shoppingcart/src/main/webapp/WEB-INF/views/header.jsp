@@ -14,7 +14,7 @@
 	<div class="flexContainer menubar center">
 		<div class="section logo">
 			<div class="dropdown">
-				<button class="dropbtn">???</button>
+				<a href=""><button class="dropbtn">???</button></a>
 			</div>
 		</div>
 		<div class="section searchBar">
@@ -24,7 +24,7 @@
 			<div class="dropdown">
 				<button class="dropbtn">Shop Products</button>
 				<div class="dropdown-content">
-					<a href="#">Misc</a> <a href="#">All Products</a>
+					<a href="">Misc</a> <a href="">All Products</a>
 				</div>
 			</div>
 		</div>
