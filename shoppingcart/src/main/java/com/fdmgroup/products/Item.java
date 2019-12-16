@@ -15,7 +15,7 @@ public class Item {
 	private int item_id;
 	private String name;
 	private String color;
-	private BigDecimal Price;
+	private BigDecimal price;
 	
 
 	public int getItem_id() {
@@ -39,11 +39,11 @@ public class Item {
 	}
 
 	public BigDecimal getPrice() {
-		return Price;
+		return price;
 	}
 
 	public void setPrice(BigDecimal price) {
-		Price = price;
+		this.price = price;
 	}
 
 }
