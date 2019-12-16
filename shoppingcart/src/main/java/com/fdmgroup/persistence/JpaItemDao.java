@@ -46,6 +46,7 @@ public class JpaItemDao implements ItemDao {
 //		em.close();
 //		return product;
 //	}
+	
 	@Override
 	public Item getItem(String name) {
 		EntityManager em = emf.createEntityManager();

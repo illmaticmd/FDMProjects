@@ -3,6 +3,7 @@ package com.fdmgroup.doa;
 import static org.junit.Assert.*;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -71,5 +72,22 @@ public class JpaItemDaoTest {
 		
 		item = classUnderTest.getItem(itemToUpdate.getName());
 		assertEquals(itemToUpdate, item);
+	}
+	
+	@Test
+	public void testListingItemsFromDatabase() {
+		//arrange
+		Item item = new Item();
+		item.setColor("blue");
+		item.setName("pen");
+		BigDecimal price = new BigDecimal(3.00);
+		item.setPrice(price);
+		
+		//act
+		classUnderTest.addItem(item);
+		
+		List<Item> actual = classUnderTest.listItems();
+		assertNotNull(actual);
+		//assertEquals(expected, actual);
 	}
 }

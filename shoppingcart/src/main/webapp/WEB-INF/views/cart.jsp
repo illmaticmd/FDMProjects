@@ -12,7 +12,7 @@
 			<h3>Price here</h3>
 		</div>
 		<div class="checkoutbutton">
-			<a href="checkOut"><button>Continue to Checkout</button></a>
+			<a href=""><button>Continue to Checkout</button></a>
 		</div>
 	</div>
 	
